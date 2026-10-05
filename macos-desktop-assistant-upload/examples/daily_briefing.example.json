@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-10-01T18:00:00-04:00",
+  "timezone": "America/New_York",
+  "sources": {
+    "canvas": {"state": "demo", "checked_at": null, "error": null},
+    "gmail": {"state": "demo", "checked_at": null, "error": null},
+    "outlook": {"state": "demo", "checked_at": null, "error": null},
+    "linkedin": {"state": "demo", "checked_at": null, "error": null}
+  },
+  "exams": [{
+    "course": "EXAMPLE 101", "title": "Midterm Exam", "exam_at": "2026-10-06T14:00:00-04:00",
+    "exam_date": "2026-10-06", "exam_end_at": "2026-10-06T15:00:00-04:00",
+    "all_day": false, "time_precision": "exact", "status": "published",
+    "source_url": "https://example.edu/course/exam", "review_url": "https://example.edu/course/midterm-review",
+    "review_state": "verified", "review_materials": [{"title": "Midterm study guide", "source": "course", "url": "https://example.edu/course/midterm-review"}]
+  }],
+  "assignments": [{"course": "EXAMPLE 101", "title": "Problem set", "due_at": "2026-10-03T23:59:00-04:00", "status": "published", "url": "https://example.edu/course/assignment"}],
+  "messages": [{"source": "gmail", "sender_display": "Course staff", "subject": "Example schedule update", "summary": "Please review the updated schedule.", "received_at": "2026-10-01T16:00:00-04:00", "priority": "P1", "importance_reason": "Direct schedule change", "url": "https://mail.google.com/mail/u/0/#inbox"}],
+  "resource_links": [{"plugin": "campus", "title": "Example campus library", "url": "https://example.edu/library"}]
+}

@@ -1,0 +1,5 @@
+Pillow>=10,<13
+google-api-python-client>=2,<3
+google-auth>=2,<3
+google-auth-oauthlib>=1,<2
+reportlab>=4,<5

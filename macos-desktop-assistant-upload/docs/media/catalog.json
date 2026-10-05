@@ -1,0 +1,212 @@
+[
+  {
+    "slug": "01-dashboard",
+    "title": "Your desktop, organized",
+    "summary": "Render one briefing as wallpaper, an HTML planner and a full report.",
+    "steps": [
+      {
+        "title": "1 / Provide a structured briefing",
+        "instruction": "Use examples/daily_briefing.example.json to try the app without connecting an account."
+      },
+      {
+        "title": "2 / Read the generated dashboard",
+        "instruction": "Exams receive priority, followed by imminent assignments, important messages and recruiting."
+      },
+      {
+        "title": "3 / Open the local planner",
+        "instruction": "The HTML and Markdown outputs preserve the details and individual source links."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  },
+  {
+    "slug": "02-deadlines-exams",
+    "title": "Know what is due next",
+    "summary": "Show seven days of exams and 72 hours of actionable assignments.",
+    "steps": [
+      {
+        "title": "1 / Review upcoming assessments",
+        "instruction": "Confirmed exams link to their verified review material; missing material falls back to the course source."
+      },
+      {
+        "title": "2 / Filter completed and expired work",
+        "instruction": "The real filter removes submitted work, expired assignments and work outside the 72-hour window."
+      },
+      {
+        "title": "3 / Keep the whole exam inventory",
+        "instruction": "An exam stays recorded even when it is outside the seven-day display window. Coverage remains partial until all sources are checked."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  },
+  {
+    "slug": "03-option-navigation",
+    "title": "Reach cards with Option",
+    "summary": "Hold Option to interact; double-tap Option to open the foreground planner.",
+    "steps": [
+      {
+        "title": "1 / Leave the desktop click-through",
+        "instruction": "With Option released, the transparent overlay lets Finder receive your clicks."
+      },
+      {
+        "title": "2 / Hold Option and choose a card",
+        "instruction": "Highlighted rectangles use the renderer's actual hotspot coordinates. Each card has its own destination."
+      },
+      {
+        "title": "3 / Double-tap Option",
+        "instruction": "Open the full HTML planner in the foreground when another window covers the desktop. This is an interaction illustration, not a live screen recording."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  },
+  {
+    "slug": "04-important-messages",
+    "title": "See messages needing attention",
+    "summary": "Show concise role, action and urgency summaries with honest source status.",
+    "steps": [
+      {
+        "title": "1 / Supply reviewed message summaries",
+        "instruction": "The renderer accepts source, sender role, action, urgency and a safe source link."
+      },
+      {
+        "title": "2 / Read the compact message card",
+        "instruction": "The dashboard shows the action summary without placing the full email body on the wallpaper."
+      },
+      {
+        "title": "3 / Check source status",
+        "instruction": "A failed connection is displayed as partial or unavailable; it is not interpreted as an empty inbox."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  },
+  {
+    "slug": "05-swe-list",
+    "title": "Verify daily internship updates",
+    "summary": "Parse real email formats and reconcile the headline count with unique job links.",
+    "steps": [
+      {
+        "title": "1 / Configure Gmail read-only access",
+        "instruction": "Provide your own OAuth client and complete consent. Scheduled collection searches the SWE List sender; this demo uses a local mail fixture."
+      },
+      {
+        "title": "2 / Reconcile every posting link",
+        "instruction": "The actual parser extracts company, role and application URL from the fictional update, then verifies the count."
+      },
+      {
+        "title": "3 / Reject incomplete results",
+        "instruction": "Changing the fixture headline to five while retaining four links makes validation fail; the job queue must not treat it as a complete update."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  },
+  {
+    "slug": "06-application-preparation",
+    "title": "Prepare applications deliberately",
+    "summary": "Keep unknown requirements, manual decisions and confirmed preparation distinct.",
+    "steps": [
+      {
+        "title": "1 / Build a local preparation queue",
+        "instruction": "Only count-verified opportunities enter the queue. Title rules and stable fingerprints remove exclusions and duplicates."
+      },
+      {
+        "title": "2 / Review job requirements",
+        "instruction": "Tiny Labs remains pending. No eligibility or application-limit result is invented just to mark a role prepared."
+      },
+      {
+        "title": "3 / Start an interactive review",
+        "instruction": "The application-center card creates a user-visible review request. An application can only be recorded as submitted after separate confirmation and an official success state."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  },
+  {
+    "slug": "07-campus-plugins",
+    "title": "Add your campus resources",
+    "summary": "Enable local JSON plugins to add useful HTTPS resource links.",
+    "steps": [
+      {
+        "title": "1 / Copy the example plugin",
+        "instruction": "Create a local JSON file under plugins/ and give it a unique identifier."
+      },
+      {
+        "title": "2 / Load the enabled resource",
+        "instruction": "The demo enables a copied plugin inside its own workspace and runs the real plugin loader."
+      },
+      {
+        "title": "3 / Find it in the planner",
+        "instruction": "The generated HTML planner contains the campus resource link. Plugins are data-only and do not execute arbitrary code."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  },
+  {
+    "slug": "08-local-api",
+    "title": "Connect another local tool",
+    "summary": "Expose verified opportunities through a read-only loopback API.",
+    "steps": [
+      {
+        "title": "1 / Start the service",
+        "instruction": "Point the API at a verified report. It binds only to the local loopback interface."
+      },
+      {
+        "title": "2 / Fetch verified opportunities",
+        "instruction": "The demonstration feeds HTTP requests into the real handler using a generated report. It uses in-memory transport, without opening a server port."
+      },
+      {
+        "title": "3 / Keep the integration read-only",
+        "instruction": "Mutation requests receive an explicit 405 response. The service is not an unattended application-submission endpoint."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  },
+  {
+    "slug": "09-tailored-resume",
+    "title": "Create a factual resume draft",
+    "summary": "Select and reorder supplied experience for a local job description.",
+    "steps": [
+      {
+        "title": "1 / Supply your facts and the job text",
+        "instruction": "Use a private JSON profile and a local job-description file. The included profile is entirely fictional."
+      },
+      {
+        "title": "2 / Inspect the selected facts",
+        "instruction": "The generator ranks existing skills and bullets by overlap with the job description. It does not rewrite experience or call an external model."
+      },
+      {
+        "title": "3 / Review the PDF",
+        "instruction": "Open the generated draft and check content and layout before using it. This page is the actual output of the sample run."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  },
+  {
+    "slug": "10-refresh-recovery",
+    "title": "Refresh with visible evidence",
+    "summary": "Plan bounded collection, preserve source failures and verify presentation separately.",
+    "steps": [
+      {
+        "title": "1 / Generate the refresh plan",
+        "instruction": "Inspect the plan before collecting. Announcements still need checking even when a cached syllabus is reusable."
+      },
+      {
+        "title": "2 / Finalize locally once",
+        "instruction": "After authenticated collection, local-only mode prepares the queue and renders. Wallpaper application is a separate explicit flag."
+      },
+      {
+        "title": "3 / Verify or preserve last good",
+        "instruction": "The renderer hashes the image used by its hotspot manifest. Recovery logic is tested with isolated fixtures; this video does not claim to verify a live lock screen."
+      }
+    ],
+    "kind": "illustrated_walkthrough",
+    "duration_seconds": 16
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "id": "campus",
+  "enabled": false,
+  "resource_links": [
+    {"title": "Campus library", "url": "https://example.edu/library"}
+  ]
+}

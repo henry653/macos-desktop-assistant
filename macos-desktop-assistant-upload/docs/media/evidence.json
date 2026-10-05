@@ -1,0 +1,136 @@
+{
+  "mode": "illustrated_walkthrough",
+  "data": "fictional",
+  "live_mail_access": false,
+  "desktop_settings_changed": false,
+  "generated_at": "2026-10-02",
+  "fixtures_at": "2026-10-01T18:00:00-04:00",
+  "swe_valid": {
+    "emails_checked": 1,
+    "expected_internship_count": 4,
+    "parsed_internship_count": 4,
+    "count_verified": true,
+    "count_mismatches": []
+  },
+  "swe_mismatch": {
+    "emails_checked": 1,
+    "expected_internship_count": 5,
+    "parsed_internship_count": 4,
+    "count_verified": false,
+    "count_mismatches": [
+      {
+        "subject": "5 New Internships Posted Today",
+        "expected": 5,
+        "parsed": 4,
+        "reason": "role_count_mismatch"
+      }
+    ]
+  },
+  "assignment_filter": {
+    "input": 4,
+    "visible": 1,
+    "expired_panel": 0
+  },
+  "queue": [
+    {
+      "company": "Google",
+      "role": "Software Engineer Intern",
+      "queue_status": "manual_decision",
+      "decision_reason": "big_company",
+      "submission_attempted": false
+    },
+    {
+      "company": "Limited Co",
+      "role": "Software Engineer Intern",
+      "queue_status": "manual_decision",
+      "decision_reason": "application_limit",
+      "submission_attempted": false
+    },
+    {
+      "company": "Tiny Labs",
+      "role": "Data Engineer Intern",
+      "queue_status": "manual_review",
+      "decision_reason": "job_requirements_fetch_required",
+      "submission_attempted": false
+    }
+  ],
+  "api": {
+    "GET /health": {
+      "status": 200,
+      "body": {
+        "state": "ok",
+        "mode": "read_only"
+      }
+    },
+    "GET /v1/opportunities": {
+      "status": 200,
+      "body": {
+        "generated_at": "2026-10-01T18:00:00-04:00",
+        "count": 3,
+        "items": [
+          {
+            "fingerprint": null,
+            "company": "Google",
+            "role": "Software Engineer Intern",
+            "apply_url": "https://jobs.example/google",
+            "queue_status": "manual_decision",
+            "resume_variant": "A"
+          },
+          {
+            "fingerprint": null,
+            "company": "Limited Co",
+            "role": "Software Engineer Intern",
+            "apply_url": "https://jobs.example/limited",
+            "queue_status": "manual_decision",
+            "resume_variant": "A"
+          },
+          {
+            "fingerprint": null,
+            "company": "Tiny Labs",
+            "role": "Data Engineer Intern",
+            "apply_url": "https://jobs.example/tiny",
+            "queue_status": "manual_review",
+            "resume_variant": "P"
+          }
+        ]
+      }
+    },
+    "POST /v1/opportunities": {
+      "status": 405,
+      "body": {
+        "error": "read_only"
+      }
+    }
+  },
+  "api_test_transport": "in_memory_http_handler",
+  "html_stats": {
+    "assignments": 1,
+    "exams": 1,
+    "warnings": 0,
+    "messages": 2,
+    "internships": 3,
+    "clickable_items": 8
+  },
+  "hotspot_count": 12,
+  "wallpaper_sha256": "262bd22012a5782fdcf6b20bf0fcabde056404572d73f91b6eae2bebfeaff4e5",
+  "source_sha256": {
+    "intern_preparation.py": "74f8d6da323efe53feb1f41917c29cf7440a74d0e472c5b3c20d0b937abbd56d",
+    "render_login_transition.py": "922d222b120694d23b41ea3db54ba0710dfea1d4dd79df745963821c79fc0c77",
+    "wallpaper_manager.py": "2397f7b329f312bd8ec1c1bbdd6124257a48dbbc1140103acb0514f4c4ea6333",
+    "assignment_filters.py": "5e229ca775ef96aa8342b275d8f306e96f3da62d69d9922c318bb10d447885e2",
+    "render_my_planner.py": "0c5a114ea33fdd0d8810e1169881daf8d5619351f462f10daef72d8520701548",
+    "daily_briefing_dispatcher.py": "e7e71bff10e415fb2c1fff70cf43da5fe6b8c79e9a825bd05723218157b026bc",
+    "reconcile_completed_refresh.py": "037e1355e323cb1633415a8b379709fa91878ed80468d24d6081d352a7fb2603",
+    "render_daily_briefing.py": "22680bbe59e003f1f9c3358931ab11e9eaa7a958f084786798f8e9d4eec3a6be",
+    "intern_application_dispatcher.py": "d567eef4479f1f21574a4c11a04cd59c6fb332ddec1ce5483a291111e235763b",
+    "run_daily_briefing.py": "6154eceb0462bcfd5e479b21375641c989200e4ed80bdee18890224e31f229f2",
+    "plugin_sources.py": "8e4b1d3414a3935d153ac6bdbe632acd7ce0b46f20abac867e2ed4bada1ef74d",
+    "export_widget_snapshot.py": "fe8451eff5a0eaa2074f59a509873859e7b9317e26c618abecaee362f247e5a7",
+    "import_assessment_evidence.py": "8b73c08fed2eb6c04c159f0fdb643130cb64f76b70d214a4e64e8a691ed2a1a6",
+    "local_api.py": "2abf6c2143a06720b47bdf4ea295a763f57cdf0cf49ed5447240b36863cf03c6",
+    "refresh_receipt.py": "a233e9d42f9d9ef6dd6fbe340faa4bc7de4995a058364772d01043d09c5ff668",
+    "swe_list_summary.py": "e08a265024ec67cc4079e880cd00b00b81345d9db6b07d2a90490dd3c5f13021",
+    "tailored_resume.py": "79ebef7a2ea8dd2db29cbc76d199bfabb914f0f6bdd0a160f7ca33d04268a590",
+    "refresh_plan.py": "213a3f23f1c63af4f87efb55d7c83862dad7cf68db21833971a5c0a204a2583a"
+  }
+}

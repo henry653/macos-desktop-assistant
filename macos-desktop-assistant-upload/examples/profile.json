@@ -1,0 +1,29 @@
+{
+  "name": "Example Student",
+  "contact": "student@example.test | example.test/portfolio",
+  "summary": "Computer science student interested in practical software systems.",
+  "experience": [
+    {
+      "title": "Engineering Intern",
+      "details": "Example Organization | Summer 2026",
+      "bullets": [
+        "Built a Python data pipeline for a class project.",
+        "Documented software test cases for a small team."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Desktop Planner",
+      "details": "Personal project",
+      "bullets": [
+        "Built a local Python dashboard for deadlines.",
+        "Designed a macOS shortcut for opening the dashboard."
+      ]
+    }
+  ],
+  "education": [
+    {"title": "Example University", "details": "B.S. Computer Science"}
+  ],
+  "skills": ["Python", "macOS", "SQL"]
+}
